@@ -7,11 +7,7 @@ Este repositório contém implementações de algoritmos e estruturas de dados d
 📦 Estrutura-de-Dados
 
  ┣ 📂 Revisão </br>
- ┃ ┣ 📜 funcoes1.cpp </br>
- ┣ 📂 pilhas </br>
- ┣ 📂 filas </br>
- ┣ 📂 arvores </br>
- ┣ 📂 ordenacao </br>
+ ┃ ┣ 📜 Funcoes1.cpp </br>
  ┣ 📜 README.md
 
  
