@@ -17,7 +17,7 @@ Este repositório contém implementações de algoritmos e estruturas de dados d
  
 <h2>🚀Tecnologias Utilizadas</h2>
 Linguagem: C </br>
-Ferramentas: Dev-C++
+Ferramentas: Dev-C++; CodeBlocks.
 
 
 <h2>📚Conteúdos Abordados</h2>
