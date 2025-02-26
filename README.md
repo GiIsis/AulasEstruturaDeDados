@@ -4,10 +4,14 @@
 Este repositório contém implementações de algoritmos e estruturas de dados desenvolvidos durante as aulas de Estrutura de Dados. Os códigos são escritos em C e irão abordar conceitos fundamentais como listas, pilhas, filas, árvores, grafos e algoritmos de ordenação.
 </br>
 <h2>📂Estrutura do Repositório</h2>
-📦 Estrutura-de-Dados
+📦 AulasEstruturaDeDados
 
  ┣ 📂 Revisão </br>
  ┃ ┣ 📜 Funcoes1.cpp </br>
+ ┣ 📂 Recursividade </br>
+ ┃ ┣ 📜 Recursivo1.c </br>
+ ┃ ┣ 📜 Fatorial.c </br>
+ ┃ ┣ 📜 PosNeg.c </br>
  ┣ 📜 README.md
 
  
