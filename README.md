@@ -12,6 +12,8 @@ Este repositório contém implementações de algoritmos e estruturas de dados d
  ┃ ┣ 📜 Recursivo1.c </br>
  ┃ ┣ 📜 Fatorial.c </br>
  ┃ ┣ 📜 PosNeg.c </br>
+ ┃ ┣ 📜 loginSenha.c </br>
+ ┃ ┣ 📜 caixqEconomico.c </br>
  ┣ 📜 README.md
 
  
