@@ -7,13 +7,16 @@ Este repositório contém implementações de algoritmos e estruturas de dados d
 📦 AulasEstruturaDeDados
 
  ┣ 📂 Revisão </br>
- ┃ ┣ 📜 Funcoes1.cpp </br>
+ ┃ ┣ 📜 Funcoes1.c </br>
+ ┃ ┣ 📜 Ponteiros.c </br>
  ┣ 📂 Recursividade </br>
  ┃ ┣ 📜 Recursivo1.c </br>
  ┃ ┣ 📜 Fatorial.c </br>
  ┃ ┣ 📜 PosNeg.c </br>
  ┃ ┣ 📜 loginSenha.c </br>
- ┃ ┣ 📜 caixqEconomico.c </br>
+ ┃ ┣ 📜 caixaEletronico.c </br>
+ ┣ 📂 Listas </br>
+ ┃ ┣ 📜 ListaLigada.c </br>
  ┣ 📜 README.md
 
  
