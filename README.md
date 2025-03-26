@@ -6,6 +6,7 @@ Este repositório contém implementações de algoritmos e estruturas de dados d
 <h2>📂Estrutura do Repositório</h2>
 📦 AulasEstruturaDeDados
 
+ ┣ 📜 README.md
  ┣ 📂 Revisão </br>
  ┃ ┣ 📜 Funcoes1.c </br>
  ┃ ┣ 📜 Ponteiros.c </br>
@@ -17,7 +18,7 @@ Este repositório contém implementações de algoritmos e estruturas de dados d
  ┃ ┣ 📜 caixaEletronico.c </br>
  ┣ 📂 Listas </br>
  ┃ ┣ 📜 ListaLigada.c </br>
- ┣ 📜 README.md
+
 
  
 <h2>🚀Tecnologias Utilizadas</h2>
