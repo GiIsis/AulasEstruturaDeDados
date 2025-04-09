@@ -18,6 +18,8 @@ Este repositório contém implementações de algoritmos e estruturas de dados d
  ┃ ┣ 📜 caixaEletronico.c </br>
  ┣ 📂 Listas </br>
  ┃ ┣ 📜 ListaLigada.c </br>
+ ┣ 📂 Filas </br>
+ ┃ ┣ 📜 Filas.c </br>
 
 
  
