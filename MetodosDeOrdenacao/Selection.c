@@ -1,8 +1,8 @@
 /*
-	Name: Selection.cpp 
+	Name: Selection.c
 	Author: Giovana Isis
 	Date: 07/05/25 11:43
-	Description: Implementação do algoritmo do método de ordenação Selection Sort
+	Description: ImplementaÃ§Ã£o do algoritmo do mÃ©todo de ordenaÃ§Ã£o Selection Sort
 */
 
 
@@ -13,7 +13,7 @@ main()
 	int i, j, menor, aux, chave;
 	int comp, troca;
 	int vet[] = {35, 72, 17, 3, 28, 93, 54, 12, 21, 45}; //Vetor randomico
-	//int vet[] = {93, 72, 54, 45, 35, 28, 21, 17, 12, 3}; //pior caso -> nº trocas = nº comparações
+	//int vet[] = {93, 72, 54, 45, 35, 28, 21, 17, 12, 3}; //pior caso -> nÂº trocas = nÂº comparaÃ§Ãµes
 	//int vet[] = {3, 12, 17, 21, 28, 35, 45, 54, 72, 93}; //melhor caso -> 0 trocas
 	
 	int tam = sizeof(vet)/sizeof(int);
@@ -25,8 +25,8 @@ main()
 	i = 0;
 	while(i < tam-1)
 	{
-		menor = i; //na primeira execução, menor recebe o endereço do primeiro elemento (indice 0)
-		j = i + 1; //começa da segunda posição, posição após a chave
+		menor = i; //na primeira execuÃ§Ã£o, menor recebe o endereÃ§o do primeiro elemento (indice 0)
+		j = i + 1; //comeÃ§a da segunda posiÃ§Ã£o, posiÃ§Ã£o apÃ³s a chave
 		
 		do{
 			comp++;
