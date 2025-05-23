@@ -1,23 +1,23 @@
 /*
-	Name: InsertionSort.cpp 
+	Name: InsertionSort.c
 	Author: Giovana Isis
 	Date: 14/05/25 11:38
-	Description: Implementação do algoritmo do método de ordenação Insertion Sort
+	Description: ImplementaÃ§Ã£o do algoritmo do mÃ©todo de ordenaÃ§Ã£o Insertion Sort
 */
 
 
 # include <stdio.h>
 
 
-//Sessão de Prototipação
-void insertionSort(int *, int); //asterisco pois será passado o vetor como primeiro parametro
+//SessÃ£o de PrototipaÃ§Ã£o
+void insertionSort(int *, int); //asterisco pois serÃ¡ passado o vetor como primeiro parametro
 
 
 main()
 {
 	int i, comp, troca;
 	int vet[] = {35, 72, 17, 3, 28, 93, 54, 12, 21, 45}; //Vetor randomico
-	//int vet[] = {93, 72, 54, 45, 35, 28, 21, 17, 12, 3}; //pior caso -> nº trocas = nº comparações
+	//int vet[] = {93, 72, 54, 45, 35, 28, 21, 17, 12, 3}; //pior caso -> nÂº trocas = nÂº comparaÃ§Ãµes
 	//int vet[] = {3, 12, 17, 21, 28, 35, 45, 54, 72, 93}; //melhor caso -> 0 trocas
 	
 	int tam = sizeof(vet)/sizeof(int);
@@ -26,7 +26,7 @@ main()
 	for(i = 0; i < tam; i++) //imprime o vetor original
 		printf("%d|", vet[i]);
 
-	insertionSort(vet, tam); //invoke da função para ordenação
+	insertionSort(vet, tam); //invoke da funÃ§Ã£o para ordenaÃ§Ã£o
 	
 	puts("\nVetor ordenado com o Insertion Sort: ");
 	for(i = 0; i < tam; i++) //imprime o vetor ordenado
