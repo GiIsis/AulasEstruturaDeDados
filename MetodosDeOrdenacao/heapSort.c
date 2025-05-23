@@ -1,8 +1,8 @@
 /*
-	Name: heapSort.cpp
+	Name: heapSort.c
 	Author: Giovana Isis
 	Date: 21/05/25 11:41
-	Description: Implementação do algoritmo para o método de ordenação Heap Sort
+	Description: ImplementaÃ§Ã£o do algoritmo para o mÃ©todo de ordenaÃ§Ã£o Heap Sort
 */
 
 
@@ -11,7 +11,7 @@
 #include <time.h>
 
 
-//Sessão de Prototipação
+//SessÃ£o de PrototipaÃ§Ã£o
 void heapfy(int *, int, int); //heapfy( int vet[], tam, i)
 void heapSort(int *, int); //heapSort(int vet[], tam
 
@@ -19,7 +19,7 @@ main()
 {
 	int i;
 	//int vet[] = {-35, 72, 17, -3, 28, 93, 54, 12, 21, 45}; //Vetor randomico
-	//int vet[] = {93, 72, 54, 45, 35, 28, 21, 17, 12, 3}; //pior caso -> nº trocas = nº comparações
+	//int vet[] = {93, 72, 54, 45, 35, 28, 21, 17, 12, 3}; //pior caso -> nÂº trocas = nÂº comparaÃ§Ãµes
 	//int vet[] = {3, 12, 17, 21, 28, 35, 45, 54, 72, 93}; //melhor caso -> 0 trocas
 	
 	int vet[100];
@@ -35,7 +35,7 @@ main()
 	for(i = 0; i < tam; i++) //imprime o vetor original
 		printf("%d|", vet[i]);
 
-	heapSort(vet, tam); //invoke da função para iniciar a ordenação
+	heapSort(vet, tam); //invoke da funÃ§Ã£o para iniciar a ordenaÃ§Ã£o
 	
 	puts("\nVetor ordenado com o Heap Sort: ");
 	for(i = 0; i < tam; i++) //imprime o vetor ordenado
@@ -44,12 +44,12 @@ main()
 }//Fim do main
 
 
-//Função recursiva que sempre testa se o nó pai é maior que seus filhos, no caso do MAX Heap
+//FunÃ§Ã£o recursiva que sempre testa se o nÃ³ pai Ã© maior que seus filhos, no caso do MAX Heap
 void heapfy(int vet[], int tam, int i)
 {
 	int maior = i;
-	int esq = (2 * i) + 1; //nó filho da esquerda	
-	int dir = (2 * i) + 2; //nó filho da direita
+	int esq = (2 * i) + 1; //nÃ³ filho da esquerda	
+	int dir = (2 * i) + 2; //nÃ³ filho da direita
 	
 	if(esq < tam && vet[esq] > vet[maior]) //se a arvore existe (< tam) E se o filho for maior que o pai
 		maior = esq;
@@ -57,7 +57,7 @@ void heapfy(int vet[], int tam, int i)
 	if(dir < tam && vet[dir] > vet[maior])
 		maior = dir;
 		
-	if(maior != i) //se não é um elemento únic, como quando o índice é 0 (i=0)
+	if(maior != i) //se nÃ£o Ã© um elemento Ãºnic, como quando o Ã­ndice Ã© 0 (i=0)
 	{
 		int aux = vet[i];
 		vet[i] = vet[maior];
@@ -65,9 +65,9 @@ void heapfy(int vet[], int tam, int i)
 		
 		heapfy(vet,tam,maior);
 	}
-}//Fim da função recursiva heapfy
+}//Fim da funÃ§Ã£o recursiva heapfy
 
-//Função do Heap Sort
+//FunÃ§Ã£o do Heap Sort
 void heapSort(int vet[], int tam)
 {
 	for(int i = tam/2-1; i >= 0; i--)
