@@ -1,19 +1,19 @@
 /*
-	Name: MergeSort.cpp 
+	Name: mergeSort.c
 	Author: Giovana Isis
 	Date: 14/05/25 12:07
-	Description: Implementação do algoritmo do método de ordenação Merge Sort
+	Description: ImplementaÃ§Ã£o do algoritmo do mÃ©todo de ordenaÃ§Ã£o Merge Sort
 */
 
 
 # include <stdio.h>
 
 
-//Sessão de Prototipação
-void mergeSort(int *, int, int); //Prototipação da Função que quebra 
-void merge(int *, int, int, int); //Prototipação da função que mescla
+//SessÃ£o de PrototipaÃ§Ã£o
+void mergeSort(int *, int, int); //PrototipaÃ§Ã£o da FunÃ§Ã£o que quebra 
+void merge(int *, int, int, int); //PrototipaÃ§Ã£o da funÃ§Ã£o que mescla
 
-//Variáveis globais
+//VariÃ¡veis globais
 int copia = 0;
 
 
@@ -23,7 +23,7 @@ main()
 	inicio = 0;
 	
 	int vet[] = {35, 72, 17, 3, 28, 93, 54, 12, 21, 45}; //Vetor randomico
-	//int vet[] = {93, 72, 54, 45, 35, 28, 21, 17, 12, 3}; //pior caso -> nº trocas = nº comparações
+	//int vet[] = {93, 72, 54, 45, 35, 28, 21, 17, 12, 3}; //pior caso -> nÂº trocas = nÂº comparaÃ§Ãµes
 	//int vet[] = {3, 12, 17, 21, 28, 35, 45, 54, 72, 93}; //melhor caso -> 0 trocas
 	
 	int tam = sizeof(vet)/sizeof(int);
@@ -33,7 +33,7 @@ main()
 	for(i = 0; i < tam; i++) //imprime o vetor original
 		printf("%d|", vet[i]);
 
-	mergeSort(vet, inicio, fim); //invoke da função para ordenação
+	mergeSort(vet, inicio, fim); //invoke da funÃ§Ã£o para ordenaÃ§Ã£o
 	
 	puts("\nVetor ordenado com o Merge Sort: ");
 	for(i = 0; i < tam; i++) //imprime o vetor ordenado
@@ -41,7 +41,7 @@ main()
 	
 }//Fim do main
 
-//Função recursiva que quebra até chegar em uma única unidade
+//FunÃ§Ã£o recursiva que quebra atÃ© chegar em uma Ãºnica unidade
 void mergeSort(int vetor[], int inicio, int fim) 
 {
 	
@@ -53,7 +53,7 @@ void mergeSort(int vetor[], int inicio, int fim)
 		merge(vetor, inicio, meio, fim);
 	}
 }
-//Função que junta as partes unitárias (merge), mesclando os elementos
+//FunÃ§Ã£o que junta as partes unitÃ¡rias (merge), mesclando os elementos
 void merge(int V[], int inicio, int meio, int fim)
 {
 	int esq, dir; //indices para os vetores do lado direito e esquerdo
@@ -84,7 +84,7 @@ void merge(int V[], int inicio, int meio, int fim)
 	}
 	
 	
-	//Caso ainda haja elementos na PRIMEIRA METADE, copiará todo o restante para o vetor auxiliar
+	//Caso ainda haja elementos na PRIMEIRA METADE, copiarÃ¡ todo o restante para o vetor auxiliar
 	while(esq <= meio)
 	{
 		copia++;
@@ -93,7 +93,7 @@ void merge(int V[], int inicio, int meio, int fim)
 		esq++;
 	}
 	
-	//Caso ainda haja elementos na SEGUNDA METADE, copiará todo o restante para o vetor auxiliar
+	//Caso ainda haja elementos na SEGUNDA METADE, copiarÃ¡ todo o restante para o vetor auxiliar
 	while(dir <= fim)
 	{
 		copia++;
