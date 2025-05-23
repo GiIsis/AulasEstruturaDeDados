@@ -20,6 +20,12 @@ Este repositório contém implementações de algoritmos e estruturas de dados d
  ┃ ┣ 📜 ListaLigada.c </br>
  ┣ 📂 Filas </br>
  ┃ ┣ 📜 Filas.c </br>
+ ┣ 📂 MetodosDeOrdenacao </br>
+ ┃ ┣ 📜 Bubble.c </br>
+ ┃ ┣ 📜 InsertionSort.c </br>
+ ┃ ┣ 📜 Selection.c </br>
+ ┃ ┣ 📜 heapSort.c </br>
+ ┃ ┣ 📜 mergeSort.c </br>
 
 
  
