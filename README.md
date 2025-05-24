@@ -26,6 +26,7 @@ Este repositório contém implementações de algoritmos e estruturas de dados d
  ┃ ┣ 📜 Selection.c </br>
  ┃ ┣ 📜 heapSort.c </br>
  ┃ ┣ 📜 mergeSort.c </br>
+ ┃ ┣ 📜 MetodosOrdenacao.c </br>
 
 
  
