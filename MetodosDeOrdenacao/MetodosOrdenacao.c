@@ -1,9 +1,9 @@
 /*
-	Name: MetodosOrdenacao.cpp
+	Name: MetodosOrdenacao.c
 	Author: Giovana Isis
 	Date: 23/05/25 21:03
-	Description: Programa para demonstrar a implementaÁ„o dos principais algoritmos de ordenaÁ„o
-    abordados na disciplina de Estrutura de Dados, permitindo a seleÁ„o do mÈtodo por meio de um menu interativo.
+	Description: Programa para demonstrar a implementa√ß√£o dos principais algoritmos de ordena√ß√£o
+    abordados na disciplina de Estrutura de Dados, permitindo a sele√ß√£o do m√©todo por meio de um menu interativo.
 */
 
 //Importando Bibliotecas
@@ -11,19 +11,19 @@
 #include <stdlib.h>
 #include <time.h>
 
-//Sess„o de prototipaÁ„o
+//Sess√£o de prototipa√ß√£o
 void gerarVetorAleatorio(int *, int);
 void imprimirVetor(int *, int);
 void bubbleSort(int *, int);
 void selectionSort(int *, int);
-void insertionSort(int *, int); //asterisco pois ser· passado o vetor como primeiro parametro
-void mergeSort(int *, int, int); //PrototipaÁ„o da FunÁ„o que quebra
-void merge(int *, int, int, int); //PrototipaÁ„o da funÁ„o que mescla
+void insertionSort(int *, int); //asterisco pois ser√° passado o vetor como primeiro parametro
+void mergeSort(int *, int, int); //Prototipa√ß√£o da Fun√ß√£o que quebra
+void merge(int *, int, int, int); //Prototipa√ß√£o da fun√ß√£o que mescla
 void heapfy(int *, int, int); //heapfy( int vet[], tam, i)
 void heapSort(int *, int); //heapSort(int vet[], tam
 
 
-//Vari·veis Globais
+//Vari√°veis Globais
 int copia = 0;
 
 main()
@@ -103,28 +103,28 @@ main()
 } //Fim do main
 
 
-//Sess„o das FunÁıes
+//Sess√£o das Fun√ß√µes
 
-//FunÁ„o que gera um vetor com valores aleatÛrios entre 0 e 99
+//Fun√ß√£o que gera um vetor com valores aleat√≥rios entre 0 e 99
 void gerarVetorAleatorio(int *vetor, int tam)
 {
     srand(time(NULL));
     for (int i = 0; i < tam; i++) {
         vetor[i] = rand() % 100;
     }
-}//Fim da funÁ„o gerarVetorAleatorio
+}//Fim da fun√ß√£o gerarVetorAleatorio
 
 
-//FunÁ„o que imprime os elementos do vetor separados por '|'
+//Fun√ß√£o que imprime os elementos do vetor separados por '|'
 void imprimirVetor(int *vetor, int tam)
 {
     for (int i = 0; i < tam; i++) {
         printf("%d|", vetor[i]);
     }
     printf("\n");
-}//Fim da funÁ„o imprimirVetor
+}//Fim da fun√ß√£o imprimirVetor
 
-//FunÁ„o que implementa o algoritmo Bubble Sort para ordenar o vetor
+//Fun√ß√£o que implementa o algoritmo Bubble Sort para ordenar o vetor
 void bubbleSort(int vetor[], int tam)
 {
     int comp = 0, troca = 0, aux;
@@ -147,9 +147,9 @@ void bubbleSort(int vetor[], int tam)
 
     printf("\n\n======> Comparacoes: %d\n", comp);
     printf("\n======> Trocas: %d\n\n", troca);
-}//Fim da funÁ„o bubbleSort
+}//Fim da fun√ß√£o bubbleSort
 
-//FunÁ„o que implementa o algoritmo Selection Sort para ordenar o vetor
+//Fun√ß√£o que implementa o algoritmo Selection Sort para ordenar o vetor
 void selectionSort(int vetor[], int tam)
 {
     int i = 0, j, menor, aux, comp = 0, troca = 0;
@@ -181,9 +181,9 @@ void selectionSort(int vetor[], int tam)
 
     printf("\n\n======> Comparacoes: %d\n", comp);
     printf("\n======> Trocas: %d\n\n", troca);
-}//Fim da funÁ„o selectionSort
+}//Fim da fun√ß√£o selectionSort
 
-//FunÁ„o que implementa o algoritmo Insertion Sort para ordenar o vetor
+//Fun√ß√£o que implementa o algoritmo Insertion Sort para ordenar o vetor
 void insertionSort(int vet[], int tam)
 {
     int i, j, chave;
@@ -200,9 +200,9 @@ void insertionSort(int vet[], int tam)
 
         vet[j + 1] = chave;
     }
-}//Fim da funÁ„o insertionSort
+}//Fim da fun√ß√£o insertionSort
 
-//FunÁ„o recursiva que quebra atÈ chegar em uma ˙nica unidade
+//Fun√ß√£o recursiva que quebra at√© chegar em uma √∫nica unidade
 void mergeSort(int vetor[], int inicio, int fim)
 {
 
@@ -213,9 +213,9 @@ void mergeSort(int vetor[], int inicio, int fim)
 		mergeSort(vetor, meio + 1, fim); //lado direito
 		merge(vetor, inicio, meio, fim);
 	}
-} //Fim da funÁ„o mergeSort
+} //Fim da fun√ß√£o mergeSort
 
-//FunÁ„o que junta as partes unit·rias (merge), mesclando os elementos
+//Fun√ß√£o que junta as partes unit√°rias (merge), mesclando os elementos
 void merge(int V[], int inicio, int meio, int fim)
 {
 	int esq, dir; //indices para os vetores do lado direito e esquerdo
@@ -246,7 +246,7 @@ void merge(int V[], int inicio, int meio, int fim)
 	}
 
 
-	//Caso ainda haja elementos na PRIMEIRA METADE, copiar· todo o restante para o vetor auxiliar
+	//Caso ainda haja elementos na PRIMEIRA METADE, copiar√° todo o restante para o vetor auxiliar
 	while(esq <= meio)
 	{
 		copia++;
@@ -255,7 +255,7 @@ void merge(int V[], int inicio, int meio, int fim)
 		esq++;
 	}
 
-	//Caso ainda haja elementos na SEGUNDA METADE, copiar· todo o restante para o vetor auxiliar
+	//Caso ainda haja elementos na SEGUNDA METADE, copiar√° todo o restante para o vetor auxiliar
 	while(dir <= fim)
 	{
 		copia++;
@@ -271,14 +271,14 @@ void merge(int V[], int inicio, int meio, int fim)
 		V[aux] = vetAux[aux - inicio];
 	}
 
-}//Fim da funÁ„o merge
+}//Fim da fun√ß√£o merge
 
-//FunÁ„o recursiva que sempre testa se o nÛ pai È maior que seus filhos, no caso do MAX Heap
+//Fun√ß√£o recursiva que sempre testa se o n√≥ pai √© maior que seus filhos, no caso do MAX Heap
 void heapfy(int vet[], int tam, int i)
 {
 	int maior = i;
-	int esq = (2 * i) + 1; //nÛ filho da esquerda
-	int dir = (2 * i) + 2; //nÛ filho da direita
+	int esq = (2 * i) + 1; //n√≥ filho da esquerda
+	int dir = (2 * i) + 2; //n√≥ filho da direita
 
 	if(esq < tam && vet[esq] > vet[maior]) //se a arvore existe (< tam) E se o filho for maior que o pai
 		maior = esq;
@@ -286,7 +286,7 @@ void heapfy(int vet[], int tam, int i)
 	if(dir < tam && vet[dir] > vet[maior])
 		maior = dir;
 
-	if(maior != i) //se n„o È um elemento ˙nic, como quando o Ìndice È 0 (i=0)
+	if(maior != i) //se n√£o √© um elemento √∫nic, como quando o √≠ndice √© 0 (i=0)
 	{
 		int aux = vet[i];
 		vet[i] = vet[maior];
@@ -294,9 +294,9 @@ void heapfy(int vet[], int tam, int i)
 
 		heapfy(vet,tam,maior);
 	}
-}//Fim da funÁ„o recursiva heapfy
+}//Fim da fun√ß√£o recursiva heapfy
 
-//FunÁ„o do Heap Sort que organiza o vetor usando heapfy e troca elementos
+//Fun√ß√£o do Heap Sort que organiza o vetor usando heapfy e troca elementos
 void heapSort(int vet[], int tam)
 {
 	for(int i = tam/2-1; i >= 0; i--)
@@ -311,4 +311,4 @@ void heapSort(int vet[], int tam)
 
 		heapfy(vet, i, 0);
 	}
-}//Fim da funÁ„o heapSort
+}//Fim da fun√ß√£o heapSort
